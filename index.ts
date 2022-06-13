@@ -19,6 +19,7 @@ const COLLECTION_NAME = process.env.COLLECTION_NAME || "noname"
 const SERVER_ID = process.env.SERVER_ID || ""
 const ALLOWED_CHANNELS = JSON.parse(process.env.ALLOWED_CHANNELS || "[]")
 const ALLOW_ALL_CHANNELS = process.env.ALLOW_ALL_CHANNELS || true
+const DEFAULT_SCORE = process.env.DEFAULT_SCORE || "COMMON"
 
 client.once('ready', () => {
     console.log("Bot online")
@@ -44,7 +45,7 @@ client.on("messageCreate", (message: Message) => {
             (message.channel).send(`Invalid format. Example - "${PREFIX}${COMMAND} #123"`)
         } else {
             let item = sorted[index]
-            let rank = "COMMON"
+            let rank = DEFAULT_SCORE
             for(let range of ranges) {
                 if(between(index, range.min, range.max)) {
                     rank = range.name
