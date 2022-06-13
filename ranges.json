@@ -1,0 +1,17 @@
+[
+  {
+    "min": 0,
+    "max": 5,
+    "name": "LEGENDARY"
+  },
+  {
+    "min": 6,
+    "max": 150,
+    "name": "RARE"
+  },
+  {
+    "min": 151,
+    "max": 250,
+    "name": "RARE-ISH"
+  }
+]

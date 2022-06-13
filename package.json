@@ -1,0 +1,14 @@
+{
+  "name": "solana-rarity-bot",
+  "version": "1.0.0",
+  "description": "A bot for showcasing rarity for an nft collection",
+  "main": "index.ts",
+  "author": "Peninsola",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^17.0.41",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  }
+}
